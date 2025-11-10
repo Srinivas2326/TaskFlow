@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  padding: 35px 40px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container h1 {
+  font-size: 1.9rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.task-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  width: 70%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.task-input button {
+  background-color: #fff;
+  color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.task-input button:hover {
+  background-color: #2575fc;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+li button {
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff004c;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+li button:hover {
+  background: #ff004c;
+  color: #fff;
+}
+
+#analyzeBtn {
+  background: #fff;
+  color: #2575fc;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+#analyzeBtn:hover {
+  background: #2575fc;
+  color: #fff;
+}
+
+#analysisResult {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .task-input {
+    flex-direction: column;
+  }
+
+  .task-input input {
+    width: 100%;
+  }
+
+  .task-input button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  li {
+    font-size: 0.95rem;
+  }
+}
